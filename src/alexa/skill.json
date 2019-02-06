@@ -1,0 +1,299 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "topcoder bot",
+          "intents": [
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": [
+                      "no thanks",
+                      "don't need",
+                      "don't want",
+                      "no"
+                  ]
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": [
+                      "help",
+                      "need help",
+                      "don't know how",
+                      "don't understand",
+                      "what I have to do"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "have a nice",
+                      "bye",
+                      "goodbye"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": [
+                      "first question",
+                      "main question",
+                      "start again"
+                  ]
+              },
+              {
+                  "name": "BugReport",
+                  "slots": [
+                      {
+                          "name": "Bug",
+                          "type": "BUG_TYPE"
+                      }
+                  ],
+                  "samples": [
+                      "have {Bug}",
+                      "fix {Bug}",
+                      "need fix",
+                      "want fix",
+                      "{Bug}",
+                      "found {Bug}",
+                      "report {Bug}"
+                  ]
+              },
+              {
+                  "name": "CreateProject",
+                  "slots": [
+                      {
+                          "name": "Application",
+                          "type": "APPLICATION_TYPE"
+                      },
+                      {
+                          "name": "Problem",
+                          "type": "PROBLEM_TYPE"
+                      }
+                  ],
+                  "samples": [
+                      "{Problem}",
+                      "There is a problem with {Problem}",
+                      "in our {Application} {Problem}",
+                      "for our {Application} {Problem}",
+                      "this is for the {Application} {Problem}",
+                      "in the {Application} {Problem}",
+                      "on {Application} I find that {Problem}",
+                      "customer {Application} {Problem}",
+                      "our {Application} {Problem}",
+                      "manage {Application} {Problem}",
+                      "have {Application} {Problem}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "APPLICATION_TYPE",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Web"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Portal"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Mobile"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Service"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Api"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Database"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Backend"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Frontend"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "BUG_TYPE",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "anomaly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "trouble"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "problem"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "error"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "bug"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "PROBLEM_TYPE",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "the list of tasks seems to be missing some important items"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "No text is visible"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Wrong icon used for hungry indicator. This needs to be corrected"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "the temperature indicator does not match what is set in our service call"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "the background image is hiding the text"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "In the profile page, I cannot see the statistics on the number of posts created by the user"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "I am unable to provide any input. It appears that the input fields are disabled for some reason"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Users have reported that they are confused which button they need to click to download their receipts"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "the video is not playing properly. I cannot seem to adjust the volume nor the playback speed and the load time is also frustrating"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "remove school and instead create a new field named type of user that will decide what actions the user can carry out"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "change the logo and replace it with a new one that we will provide shortly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "positioning of the element is not right"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "I am unable to click"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "They get a nasty error message when they try to click on the shopping cart button"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Users are not able to login"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Users are not able to register themselves"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "when a new user joins a new group, they are not able to receive the feed updates from other members in that group"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "In the dashboard page, the links are not showing properly"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "looks weird"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "color is not matching the design"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "does not work"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "slow"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "unresponsive"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "crash"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "out of memory"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
